@@ -17,7 +17,7 @@ class Complex
 
     public int Imaginary { get; private set; }
 
-    //cim napravimo bilo kakav konstruktor, nestaje parametarski
+    //cim napravimo bilo kakav konstruktor, nestaje defaultni
     //svaka klasa mora imati konstruktor, ako mi nismo napravili onda compiler pravi defaultni
     public Complex(int real, int imaginary)
     {
@@ -26,7 +26,7 @@ class Complex
     }
     public string GetAsString()
     {
-        string sign = Imaginary < 0 ? "" : "+";
+        string sign = Imaginary < 0 ? "" : "+"; //ako je im < 0 stavi prazan string, u suprotnom stavi +
         return $"{Real}{sign}{Imaginary}i" //radimo novi string na temelju manjih
         //na Real i Imaginary se radi automatska konverzija u string iz int
     }

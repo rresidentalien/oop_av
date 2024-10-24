@@ -55,12 +55,12 @@ class Complex
         //na Real i Imaginary se radi automatska konverzija u string iz int
     }
 
-    //metodima ili atributima koji su static pristupamo preko klase, ne objekta
-    //i dalje se koristi . ali se navodi ime klase
+    //metodama ili atributima koji su static pristupamo preko klase, ne objekta
+    //i dalje se koristi . ali se navodi ime klase umjesto imena objekta
     //zato kazemo da se static elementi pristupaju na klasi
-    //ne-static elementi su na instanci(objektu)
+    //ne-static elementi su na instanci klase (objektu)
     //ovo koristimo kad nam nije nuzno da svaki objekt ima ovaj atribut ili metodu
-    //npr: matematika za racunanje korijena - static da ju ne "pravimo" svaki put kada napravimo objekt
+    //npr: matematika za racunanje korijena - static da ju ne "pravimo" svaki put kada napravimo objekt ili da ne moramo praviti objekt kada zelimo izracunati samo korijen neke varijable
     //nestaticki atributi i metode smiju pristupati statickim clanovima
     /*
     class Math
@@ -73,7 +73,7 @@ class Complex
     ovdje nam nije potrebno da pravimo cijeli objekt samo da bismo korjenovali d, pa nam je Sqrt static
     */
 
-    //study tip - paziti na stvari koje nemamo u c# ali imamo u drugim oop jezicima jer oni mogu biti na usmenom
+    //study tip - paziti na stvari koje nemamo u c# ali imamo u drugim oop jezicima jer oni mogu biti na usmenom npr prijateljska funkcija u c++
 }
 
 class Army
