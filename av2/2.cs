@@ -31,18 +31,16 @@ class Complex
     //mozemo pozvati get izvan klase, ali ne i set - set samo unutar klase
 
     public int Imaginary { get; private set; }
-
-    //delegirani konstruktor = 
     
-    //duplicirani kod - dolje imamo isto to
+    //duplicirani kod - dolje imamo isto to, nepotrebno pisanje kad radi isto sto i defaultni konstruktor
     /*public Complex(int real, int imaginary)
     {
         this.Real = 0;
         this.Imaginary = 0;
     }*/
 
-
-    public Complex() : this(0, 0) {}
+    //delegirani konstruktor = konstruktor koji poziva drugi konstruktor da obavi inicijalizaciju
+    public Complex() : this(0, 0) {} //: this (0, 0) {} poziva donji konstruktor s argumentima 0, 0
     public Complex(int real, int imaginary)
     {
         this.Real = real;

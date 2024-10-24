@@ -66,7 +66,7 @@ class Complex
     }
 
     //preoprterecivanje u c# radi se kao staticka funkcija
-    public static Complex operaotr+ (Complex left, Complex right)
+    public static Complex operator +(Complex left, Complex right)
     {
         return new Complex( 
             left.Real + right.Real,
