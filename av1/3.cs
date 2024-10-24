@@ -20,7 +20,7 @@ namespace av1
     class Farm
     {
         private string address;
-        private Dog dog;
+        private Dog[] dog;
 
         public Farm(string address, int count)
         {
@@ -77,7 +77,7 @@ namespace av1
 
        public void SetName(string name) //ne treba nista vratiti
        {
-            name = this.name; //ne davati glupa imena varijabli (npr nname) nego koristiti this - referenca na samog sebe - "u atribut pohrani vrijednost koju si dobio kao argument"
+            this.name = name; //ne davati glupa imena varijabli (npr nname) nego koristiti this - referenca na samog sebe - "u atribut pohrani vrijednost koju si dobio kao argument"
             //uvijek pisati kod tako da nema iznenadjenja!!!! netko drugi mora moci nastaviti raditi na nasem kodu
 
             //this.name = name.ToUpper(); - postavii smo pravilo za upisivanje imena
