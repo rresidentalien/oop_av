@@ -109,5 +109,9 @@ class Program
         //cijela poanta apstraktne klase - u njoj implementiramo defaultno ponasanje
         //takodjer i da prisilimo sve izvedene klase da implementiraju apstraktne metode
         //mehanizam da sigurno znamo da cemo imati neko ponasanje u svim izvedenim klasama - ocekujemo to ponasanje
+
+        //ako ne overrideamo virtualnu metodu, koristit ce se ona iz base klase
+        //apstraktna se mora overrideati
+        //apstraktne metode su podrazumijevano virtualne
     }
 }

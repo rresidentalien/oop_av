@@ -112,6 +112,17 @@ class Program
         //sadrzi virtualne metode koje mozemo overridati i u pravilu to i zelimo (lv2 - ToString override)
 
         //overrideani gethashcode() i equals() - npr umjesto razlicitih adresa kao mjera za razlikovanje objekata, gledat ce se jmbag i ime studenta - ako su oni isti, objekti su isti
+
+        /*
+        Derived d1 = new Derived();
+        Base b1 = d1;
+
+        problem nastaje kad idemo u kontra smjeru:
+        Base b2_really_d1 = (Derived)b1;
+        kompajler ne moze znati koji je objekt iza b1 pa mu moramo eksplicitno reci
+        base u derived - downcasting i mora biti eksplicitan
+        derived u base - upcasting
+        */
     }
 
     public static Character Generate()
