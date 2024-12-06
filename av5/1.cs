@@ -19,7 +19,7 @@ using Students; //moramo u ovaj namespace dodati drugi da bismo mogli koristiti 
         {
             Student student = new Student(); //Student je u drugom namespaceu pa ga ne mozemo samo ovako koristiti
             Teacher teacher = new Teacher();
-            Students.Student anotherStudent = new Student(); //fully qualified name
+            Students.Student anotherStudent = new Student(); //fully qualified name - nije potrebno pisati i ovo i koristiti using, samo jedno od tog dvoje
             //mozemo imati istoimene klase iz razlicitih imenika
         }
 
