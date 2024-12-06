@@ -26,6 +26,7 @@ using Students; //moramo u ovaj namespace dodati drugi da bismo mogli koristiti 
     }
 }
 
+using Students.Staff;
 namespace Students
 {
     public class Student
@@ -42,12 +43,12 @@ namespace Students
 }
 
 //podimenici
-
-namespace Student.Staff //staff je podimenik od student
+using Students;
+namespace Students.Staff //staff je podimenik od students
 {
     public class Teacher
     {
-        private Student student = new Student(); //ovo radi jer je staff podimenik studenta
+        private Student student = new Student();
     }
 }
 
