@@ -13,7 +13,7 @@ using Students; //moramo u ovaj namespace dodati drugi da bismo mogli koristiti 
         private List<int> numbers;
     }
 
-    internal class Program()
+    internal class Program
     {
         static void Main()
         {
