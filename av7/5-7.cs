@@ -1,7 +1,7 @@
 public abstract class IotSensor {
-    protected int samplingRateHz ; // in Hz ( samples per second), > 0
-    protected double batteryPercent ; // in percent , in range [0, 100]
-    protected double samplePowerDraw ; // percent of battery required for each sample
+    protected int samplingRateHz; // in Hz ( samples per second), > 0
+    protected double batteryPercent; // in percent , in range [0, 100]
+    protected double samplePowerDraw; // percent of battery required for each sample
 }
 //5. zadatak - parametarski konstruktor, metoda koja racuna preostalo vrijeme rada senzora, metoda koja za predan broj sekundi rada racuna koliko je uzoraka moguce obraditi
 protected IotSensor (int samplingRateHz, double batteryPercent, double samplePowerDraw)

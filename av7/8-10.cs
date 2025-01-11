@@ -1,20 +1,21 @@
 public class Circle {
-    public Circle(int x, int y, double radius ) {
+    public Circle(int x, int y, double radius) 
+    {
         this.X = x; 
         this.Y = y; 
-        this. Radius = radius;
+        this.Radius = radius;
     }
     public int X { get; private set; }
     public int Y { get; private set; }
     public double Radius { get; private set; }
 }
-public interface ICirclePicker {
+public interface ICirclePicker 
+{
     Circle PickMostSimilar ( Circle circle , List <Circle > circles );
     List <Circle > PickSimilar (Circle circle , List <Circle > circles , double differencePercent);
 }
 //8. zadatak - klasa koja nasljedjuje sucelje ICirclePicker
-public double Area { get { return Radius * Radius * Math.Pi; } //smijemo si ovako pomoci i nesto dodati (calculated property)
-}
+public double Area { get { return Radius * Radius * Math.Pi; } } //smijemo si ovako pomoci i nesto dodati (calculated property)
 class AreaPicker : ICirclePicker
 {
     public Circle PickMostSimilar(Circle circle, List<Circle> circles)

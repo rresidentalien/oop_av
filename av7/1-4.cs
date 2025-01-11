@@ -4,16 +4,18 @@
 
 
 
-public class Company {
+public class Company 
+{
     string name;
     decimal yearlyEarnings;
     decimal stockValue;
 }
-public static void Run () {
+public static void Run () 
+{
     Company span = new Company ("SPAN", 105 _100_000m , 50.60m);
     Company ericsson = new Company (" Ericsson Nikola Tesla", 300 _000_000m , 61.66m);
     Company largest = span > ericsson ? span : ericsson ;
-    Console.WriteLine ($"{ largest.Name}, revenue : { largest.YearlyEarnings }, stock: { largest.StockValue }");
+    Console.WriteLine ($"{largest.Name}, revenue : {largest.YearlyEarnings}, stock: {largest.StockValue}");
  }
 //1. zadatak - trebamo napraviti parametarski konstruktor, preoptereceni operator (samo onaj koji se koristi), svojstva
 public Company(string name, decimal yearlyEarnings, decimal stockValue)
@@ -76,12 +78,12 @@ public string CreateAcronym() //ni slucajno ovdje napisati string name - odmah s
 
 
 Dictionary <int , Company > yearlyReports = new Dictionary <int , Company >() {
-    { 2012 , new Company (" Infinum ", 84 _000_105 , 35.44m) },
-    { 2014 , new Company (" Infinum ", 91 _000_105 , 44.11m) },
-    { 2016 , new Company (" Infinum ", 63 _000_105 , 22.27m) },
+    { 2012, new Company("Infinum", 84 _000_105, 35.44m) },
+    { 2014, new Company("Infinum", 91 _000_105, 44.11m) },
+    { 2016, new Company("Infinum", 63 _000_105, 22.27m) },
 };
-DrasticYears drasticYears = StockAnalyst . FindDrasticYears ( yearlyReports );
-Console . WriteLine ($"Best: { drasticYears.BestYear }, worst: { drasticYears.WorstYear }.");
+DrasticYears drasticYears = StockAnalyst.FindDrasticYears (yearlyReports);
+Console . WriteLine ($"Best: {drasticYears.BestYear}, worst: {drasticYears.WorstYear}.");
 //3. zadatak
 class DrasticYears
 {
@@ -116,7 +118,8 @@ public class StockMarket {
     public string name;
     private List <Company > listedCompanies;
 
-    public StockMarket(string name) {
+    public StockMarket(string name) 
+    {
         this.name = name;
     }
     public void GetName () { return this.name; }
